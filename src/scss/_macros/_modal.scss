@@ -1,5 +1,56 @@
 // MODAL :: START
 
-.c-modal {}
+.c-modal {
+	&#searchModal {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: -8px;
+		width: calc(100% + 16px);
+		height: 100vh;
+		background-color: rgba(#002d5b, 0.9);
+
+		.mfp-close {
+			opacity: 1;
+			color: #ffffff;
+		}
+
+		.c-modal {
+			&__body {
+				width: 100%;
+				max-width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+
+				form {
+					width: 100%;
+
+					label {
+						display: flex;
+						width: 100%;
+					}
+
+					input {
+						outline: none;
+						position: relative;
+						width: 100%;
+						height: 75px;
+						border: none;
+						border-bottom: 2px solid #fff;
+						box-shadow: none;
+						border-radius: 0;
+						background-color: transparent;
+						text-align: center;
+						font-size: 40px;
+						color: rgb(255, 255, 255);
+						@include inputPlaceholder {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 // MODAL :: END

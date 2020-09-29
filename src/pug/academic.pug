@@ -20,3 +20,11 @@ block content
 		include components/academic/_main
 		include components/academic/_schedule
 
+
+		mixin modalContent()
+			.c-modal__body
+				form(action='' method='' autocomplete='off')
+					label
+						input(type='text' name='' placeholder='Search Here...')
+
+		+modal('searchModal', 'modalContent')

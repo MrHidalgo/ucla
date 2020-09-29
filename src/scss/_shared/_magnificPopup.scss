@@ -1,4 +1,4 @@
-.modal {
+.c-modal {
   position: relative;
   width: 100%;
   //max-width: 500px;
@@ -53,7 +53,7 @@
   .mfp-with-anim {
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 
   &.mfp-bg {
@@ -73,7 +73,7 @@
 
   &.mfp-removing {
     .mfp-with-anim {
-      transform: translateX(100%);
+      transform: translateX(-100%);
       opacity: 0;
     }
     &.mfp-bg {

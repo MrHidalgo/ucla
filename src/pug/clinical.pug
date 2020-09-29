@@ -17,3 +17,12 @@ block content
 		include components/clinical/_main
 		include components/clinical/_schedule
 
+
+		mixin modalContent()
+			.c-modal__body
+				form(action='' method='' autocomplete='off')
+					label
+						input(type='text' name='' placeholder='Search Here...')
+
+		+modal('searchModal', 'modalContent')
+
