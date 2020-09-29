@@ -1,0 +1,43 @@
+// HEADER :: START
+
+header#header.header.header--clinical
+	.c-grid
+		.header__wrapper
+			.header__wrapper-left
+
+				.logo.logo--clinical
+					a.logo__btn(href="/")
+						img.logo__img(src='img/logo-clinical.jpg' srcset='img/logo-clinical@2x.jpg 2x')
+
+			.header__wrapper-right
+
+				nav.header__nav
+					div
+						.header__nav-dropdown(dropdown-node-js)
+							a.header__nav-link(href="#")
+								span Treatment Options
+								i(dropdown-toggle-js)
+							.header__nav-dropdown-menu(dropdown-js)
+								a(href="#") Action
+								a(href="#") One More Action
+								a(href="#") More Action
+								a(href="#") Another Action
+
+					div
+						.header__nav-dropdown(dropdown-node-js)
+							a.header__nav-link(href="#")
+								span What is TMS
+								i(dropdown-toggle-js)
+							.header__nav-dropdown-menu(dropdown-js)
+								a(href="#") Action
+								a(href="#") One More Action
+								a(href="#") More Action
+								a(href="#") Another Action
+					div
+						a.header__nav-link(href="#")
+							span Meet The Team
+					div
+						a.header__nav-link(href="#")
+							span Contact Us
+
+// HEADER :: END

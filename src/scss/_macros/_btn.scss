@@ -1,0 +1,77 @@
+$bth-border-radius: 0;
+$bth-box-shadow: none;
+
+.c-btn {
+  outline: none;
+  cursor: pointer;
+	position: relative;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: none;
+  box-shadow: $bth-box-shadow;
+  border-radius: $bth-border-radius;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.icon-font,
+	span {
+		z-index: 2;
+		position: relative;
+	}
+
+	.icon-font {
+		& + span {
+			padding-left: 16px;
+		}
+	}
+
+	span {
+		font-size: 14px;
+		letter-spacing: 0.2px;
+	}
+
+	&--big {
+		height: 54px;
+	}
+	&--medium {
+		height: 46px;
+	}
+
+	&--orange {
+		background-color: #fbc113;
+
+		.icon-font,
+		span {
+			text-transform: uppercase;
+			color: #181818;
+		}
+	}
+
+	&--blue {
+		background-color: #2775ad;
+
+		.icon-font,
+		span {
+			color: #fff;
+		}
+	}
+
+	&--whiteBorder {
+		border: 1px solid #fff;
+		background-color: transparent;
+
+		.icon-font,
+		span {
+			color: #fff;
+		}
+	}
+}
+
+// BUTTON :: END

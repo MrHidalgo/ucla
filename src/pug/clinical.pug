@@ -1,0 +1,19 @@
+---
+title: UCLA | Clinical
+
+pageClassName: p-clinical
+---
+extends shared/_layout
+
+block subheader
+	include components/clinical/_subheader
+
+block header
+	include components/common/_header-clinical
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/clinical/_main
+		include components/clinical/_schedule
+

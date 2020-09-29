@@ -1,0 +1,127 @@
+// HEADER :: START
+
+.header {
+	position: relative;
+	background-color: #ffffff;
+
+	&.header--clinical {
+		.header {
+			&__wrapper {}
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 198px;
+
+		&-left {
+			padding-left: 1px;
+			padding-bottom: 15px;
+		}
+
+		&-right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+	}
+
+	&__ip {
+		padding-left: 35px;
+		font-weight: 600;
+		color: #181818;
+		letter-spacing: 0.7px;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+
+		> div {
+			&:not(:last-of-type) {
+				padding-right: 55px;
+			}
+		}
+
+		&-dropdown {
+			position: relative;
+
+			&.is-active {
+				[dropdown-toggle-js] {
+					&:after {
+						transform: translate(-50%, calc(-50% + 4px)) rotate(-225deg);
+					}
+				}
+			}
+
+			&-menu {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(10px);
+				white-space: nowrap;
+				position: absolute;
+				top: calc(100% + 10px);
+				right: 0;
+				min-width: 200px;
+				padding: 5px 0;
+				border-radius: 5px;
+				box-shadow: 0 2px 10px 0 rgba(#000, 0.15);
+				background-color: #ffffff;
+				@include transition(opacity, visibility, transform);
+
+				&.is-open {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+					@include transition(opacity, visibility, transform);
+				}
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					width: 100%;
+					min-height: 35px;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: rgb(68, 67, 67);
+					text-align: right;
+				}
+			}
+		}
+
+		&-link {
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			span {
+				font-size: 22px;
+				color: rgb(68, 67, 67);
+			}
+
+			i {
+				position: relative;
+				width: 22px;
+				height: 22px;
+				margin-left: 5px;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 7px;
+					height: 7px;
+					transform: translate(-50%, -50%) rotate(-45deg);
+					border-left: 1px solid rgb(68, 67, 67);
+					border-bottom: 1px solid rgb(68, 67, 67);
+				}
+			}
+		}
+	}
+}
+
+// HEADER :: END

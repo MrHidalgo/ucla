@@ -1,0 +1,28 @@
+// LOGOTYPE :: START
+
+.logo {
+	display: flex;
+
+	&.logo--clinical {
+		.logo {
+			&__btn {
+				max-width: 465px;
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: flex-start;
+		max-width: 459px;
+	}
+
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+}
+
+// LOGOTYPE :: END

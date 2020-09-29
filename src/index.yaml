@@ -1,0 +1,12 @@
+ProjectTitle: UCLA
+
+PageList:
+- file: index.html
+  titleName: Home
+  ready: 1
+- file: clinical.html
+  titleName: Clinical
+  ready: 1
+- file: academic.html
+  titleName: Academic
+  ready: 1

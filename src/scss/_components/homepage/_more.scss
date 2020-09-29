@@ -1,0 +1,25 @@
+// SECTION :: START
+
+.more {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 176px;
+	padding: 15px;
+	background-color: #fbc113;
+
+	&__title {
+		padding-bottom: 7px;
+		text-align: center;
+		color: #5b4606;
+		font-size: 28px;
+		line-height: 1.2;
+
+		strong {
+			text-decoration: underline;
+			font-weight: 700;
+		}
+	}
+}
+
+// SECTION :: END
