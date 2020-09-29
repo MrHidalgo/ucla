@@ -55,9 +55,30 @@
 			transform: translateY(-50%);
 			width: 20px;
 			height: 60px;
+			background-color: transparent;
+			@include transition(filter);
+
+			&:hover {
+				filter: drop-shadow(0 0 4px rgba(#000, 0.65));
+				@include transition(filter);
+			}
 
 			&--prev {
 				left: 0;
+
+				&:hover {
+					&:after,
+					&:before {
+						@include transition(transform);
+					}
+
+					&:after {
+						transform: rotate(40deg) translateY(5px);
+					}
+					&:before {
+						transform: rotate(-40deg) translateY(-5px);
+					}
+				}
 
 				&:after {
 					transform: rotate(20deg) translateY(1px);
@@ -68,6 +89,20 @@
 			}
 			&--next {
 				right: 0;
+
+				&:hover {
+					&:after,
+					&:before {
+						@include transition(transform);
+					}
+
+					&:after {
+						transform: rotate(-40deg) translateY(5px);
+					}
+					&:before {
+						transform: rotate(40deg) translateY(-5px);
+					}
+				}
 
 				&:after {
 					transform: rotate(-20deg) translateY(1px);
@@ -81,10 +116,11 @@
 			&:before {
 				content: '';
 				position: absolute;
-				right: 0;
+				left: 50%;
 				width: 1px;
 				height: 50%;
 				background-color: #ffffff;
+				@include transition(transform);
 			}
 
 			&:after {

@@ -8,5 +8,6 @@
 * - bootstrap.min.js.map;
 * - swiper.min.js;
 * - swiper.min.js.map
+* - magnific-popup.js;
 *
 * */

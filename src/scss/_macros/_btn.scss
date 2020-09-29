@@ -3,6 +3,7 @@ $bth-box-shadow: none;
 
 .c-btn {
   outline: none;
+	overflow: hidden;
   cursor: pointer;
 	position: relative;
 	display: flex;
@@ -15,6 +16,31 @@ $bth-box-shadow: none;
   box-shadow: $bth-box-shadow;
   border-radius: $bth-border-radius;
 
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 100%;
+		@include transition(width);
+	}
+
+	&:before {
+		left: 50%;
+	}
+	&:after {
+		right: 50%;
+	}
+
+	&:hover {
+		&:before,
+		&:after {
+			width: 50%;
+			@include transition(width);
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
@@ -24,6 +50,7 @@ $bth-box-shadow: none;
 	span {
 		z-index: 2;
 		position: relative;
+		@include transition(color);
 	}
 
 	.icon-font {
@@ -47,6 +74,11 @@ $bth-box-shadow: none;
 	&--orange {
 		background-color: #fbc113;
 
+		&:before,
+		&:after {
+			background-color: lighten(#fbc113, 5%);
+		}
+
 		.icon-font,
 		span {
 			text-transform: uppercase;
@@ -57,6 +89,11 @@ $bth-box-shadow: none;
 	&--blue {
 		background-color: #2775ad;
 
+		&:before,
+		&:after {
+			background-color: lighten(#2775ad, 5%);
+		}
+
 		.icon-font,
 		span {
 			color: #fff;
@@ -66,6 +103,19 @@ $bth-box-shadow: none;
 	&--whiteBorder {
 		border: 1px solid #fff;
 		background-color: transparent;
+
+		&:hover {
+			.icon-font,
+			span {
+				color: #181818;
+				@include transition(color);
+			}
+		}
+
+		&:before,
+		&:after {
+			background-color: #fff;
+		}
 
 		.icon-font,
 		span {

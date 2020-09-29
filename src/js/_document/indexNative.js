@@ -6,11 +6,16 @@
 			const el = $(ev.currentTarget),
 				elParent = el.closest('[dropdown-node-js]');
 
-			$('[dropdown-node-js]').removeClass('is-active');
-			$('[dropdown-js]').removeClass('is-open');
+			if(elParent.hasClass('is-active')) {
+				elParent.removeClass('is-active');
+				elParent.find('[dropdown-js]').removeClass('is-open');
+			} else {
+				$('[dropdown-node-js]').removeClass('is-active');
+				$('[dropdown-js]').removeClass('is-open');
 
-			elParent.toggleClass('is-active');
-			elParent.find('[dropdown-js]').toggleClass('is-open');
+				elParent.addClass('is-active');
+				elParent.find('[dropdown-js]').addClass('is-open');
+			}
 
 			ev.preventDefault();
 			return false;
@@ -45,6 +50,8 @@
 		// ==========================================
 
 		// lib
+		initSwiper();
+		initPopups();
 		// ==========================================
 
 		// callback

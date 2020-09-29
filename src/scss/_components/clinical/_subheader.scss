@@ -1,6 +1,11 @@
 // SECTION :: START
 
 .subheader {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background-color: #fbc113;
 
 	&.subheader--academic {
@@ -32,7 +37,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 29px;
+		height: 30px;
 
 		&-left {
 			display: flex;
@@ -64,6 +69,10 @@
 	&__portal {
 		display: flex;
 		align-items: center;
+
+		&:hover {
+			color: #5b4606;
+		}
 
 		.icon-font {
 			color: #5b4606;

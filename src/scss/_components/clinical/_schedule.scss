@@ -45,6 +45,18 @@
 		background-color: rgb(255, 255, 255);
 		box-shadow: 0 2px 0 0 rgba(227, 229, 231, 0.4);
 
+		&:hover {
+			.schedule__box-more {
+				transform: translateY(25%);
+				@include transition(transform);
+
+				i {
+					transform: rotate(-45deg) scale(1.15);
+					@include transition(transform);
+				}
+			}
+		}
+
 		&-wrapper {
 			display: flex;
 			justify-content: space-between;
@@ -109,6 +121,7 @@
 			margin-right: auto;
 			border-radius: 50%;
 			background-color: rgb(39, 117, 173);
+			@include transition(transform);
 
 			i {
 				position: relative;
@@ -118,6 +131,7 @@
 				border-left: 2px solid #fff;
 				border-bottom: 2px solid #fff;
 				transform: rotate(-45deg);
+				@include transition(transform);
 			}
 		}
 	}
