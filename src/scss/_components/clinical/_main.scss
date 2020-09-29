@@ -3,6 +3,24 @@
 .c-main {
 	position: relative;
 
+	&.c-main--academic {
+		&:before {
+			background-color: rgba(#fff, 1);
+		}
+		&:after {
+			display: none;
+		}
+
+		.c-main {
+			&__slide {
+				&-title,
+				&-desc {
+					color: #2a2a2a;
+				}
+			}
+		}
+	}
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -101,7 +119,10 @@
 			padding-bottom: 30px;
 			font-size: 34px;
 			color: rgb(255, 255, 255);
-			font-weight: bold;
+
+			strong {
+				font-weight: 700;
+			}
 		}
 
 		&-desc {
@@ -121,6 +142,9 @@
 			display: flex;
 			align-items: center;
 			min-height: 600px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 		}
 	}
 }

@@ -3,11 +3,40 @@
 .subheader {
 	background-color: #fbc113;
 
+	&.subheader--academic {
+		background-color: #023b64;
+
+		.subheader {
+			&__ip,
+			&__visit {
+				color: #fff;
+			}
+
+			&__search {
+				.icon-font {
+					color: #fff;
+				}
+			}
+		}
+
+		ul {
+			li {
+				u {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 29px;
+
+		&-left {
+			display: flex;
+		}
 
 		&-right {
 			display: flex;

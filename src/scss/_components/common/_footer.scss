@@ -6,6 +6,18 @@
 	padding-bottom: 71px;
 	background-color: #181818;
 
+	&.footer--academic {
+		.footer {
+			&__wrapper {
+				&-col {
+					max-width: 260px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: flex-start;

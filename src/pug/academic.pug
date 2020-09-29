@@ -1,0 +1,22 @@
+---
+title: UCLA | Academic
+
+pageClassName: p-academic
+---
+extends shared/_layout
+
+block subheader
+	include components/academic/_subheader
+
+block header
+	include components/common/_header-academic
+
+block footer
+	include components/common/_footer-academic
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/academic/_main
+		include components/academic/_schedule
+

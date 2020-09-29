@@ -5,8 +5,14 @@
 	background-color: #ffffff;
 
 	&.header--clinical {
-		.header {
-			&__wrapper {}
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 10px;
+			background-color: #efefef;
 		}
 	}
 

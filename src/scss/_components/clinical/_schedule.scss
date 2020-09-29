@@ -4,6 +4,10 @@
 	padding-top: 60px;
 	background-color: #efefef;
 
+	&.schedule--academic {
+		padding-top: 20px;
+	}
+
 	&__row {
 		&-1 {
 			display: flex;

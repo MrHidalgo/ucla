@@ -1,0 +1,41 @@
+// SECTION :: START
+
+section#c-main.c-main.c-main--academic
+
+	.c-main__slider
+
+		mixin swiperContent()
+			.swiper-slide(style='background-image:url("img/img-a-main-slide-1@2x.png")')
+				.c-grid
+					.c-main__slide
+						p.c-main__slide-title!= "<strong>UCLA Neuromodulation</strong>: <br>Our Mission"
+						p.c-main__slide-desc The Neuromodulation Division of the Semel Institute integrates the work of experts from across the campus to develop new approaches to understanding the brain, and new treatments for psychiatric and neurological disorders.
+						.c-btn__wrapper
+							a.c-btn.c-btn--big.c-btn--blue(href="#")
+								span Learn more
+
+			.swiper-slide(style='background-image:url("img/img-a-main-slide-1@2x.png")')
+				.c-grid
+					.c-main__slide
+						p.c-main__slide-title!= "<strong>UCLA Neuromodulation</strong>: <br>Our Mission"
+						p.c-main__slide-desc The Neuromodulation Division of the Semel Institute integrates the work of experts from across the campus to develop new approaches to understanding the brain, and new treatments for psychiatric and neurological disorders.
+						.c-btn__wrapper
+							a.c-btn.c-btn--big.c-btn--blue(href="#")
+								span Learn more
+
+			.swiper-slide(style='background-image:url("img/img-a-main-slide-1@2x.png")')
+				.c-grid
+					.c-main__slide
+						p.c-main__slide-title!= "<strong>UCLA Neuromodulation</strong>: <br>Our Mission"
+						p.c-main__slide-desc The Neuromodulation Division of the Semel Institute integrates the work of experts from across the campus to develop new approaches to understanding the brain, and new treatments for psychiatric and neurological disorders.
+						.c-btn__wrapper
+							a.c-btn.c-btn--big.c-btn--blue(href="#")
+								span Learn more
+
+		+swiper('mainSwiper', 'swiperContent', false, false, false)
+
+		.c-main__slider-btn-wrapper
+			a.c-main__slider-btn.c-main__slider-btn--prev(href="#")
+			a.c-main__slider-btn.c-main__slider-btn--next(href="#")
+
+// SECTION :: END

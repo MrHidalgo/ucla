@@ -438,7 +438,18 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 13, src/scss/_components/common/_header.scss */
+/* line 8, src/scss/_components/common/_header.scss */
+.header.header--clinical:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #efefef;
+}
+
+/* line 19, src/scss/_components/common/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,13 +466,13 @@ picture {
   height: 198px;
 }
 
-/* line 19, src/scss/_components/common/_header.scss */
+/* line 25, src/scss/_components/common/_header.scss */
 .header__wrapper-left {
   padding-left: 1px;
   padding-bottom: 15px;
 }
 
-/* line 24, src/scss/_components/common/_header.scss */
+/* line 30, src/scss/_components/common/_header.scss */
 .header__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -477,7 +488,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 31, src/scss/_components/common/_header.scss */
+/* line 37, src/scss/_components/common/_header.scss */
 .header__ip {
   padding-left: 35px;
   font-weight: 600;
@@ -485,7 +496,7 @@ picture {
   letter-spacing: 0.7px;
 }
 
-/* line 38, src/scss/_components/common/_header.scss */
+/* line 44, src/scss/_components/common/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,24 +508,24 @@ picture {
           align-items: center;
 }
 
-/* line 43, src/scss/_components/common/_header.scss */
+/* line 49, src/scss/_components/common/_header.scss */
 .header__nav > div:not(:last-of-type) {
   padding-right: 55px;
 }
 
-/* line 48, src/scss/_components/common/_header.scss */
+/* line 54, src/scss/_components/common/_header.scss */
 .header__nav-dropdown {
   position: relative;
 }
 
-/* line 53, src/scss/_components/common/_header.scss */
+/* line 59, src/scss/_components/common/_header.scss */
 .header__nav-dropdown.is-active [dropdown-toggle-js]:after {
   -webkit-transform: translate(-50%, -webkit-calc(-50% + 4px)) rotate(-225deg);
       -ms-transform: translate(-50%, calc(-50% + 4px)) rotate(-225deg);
           transform: translate(-50%, calc(-50% + 4px)) rotate(-225deg);
 }
 
-/* line 59, src/scss/_components/common/_header.scss */
+/* line 65, src/scss/_components/common/_header.scss */
 .header__nav-dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -540,7 +551,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 74, src/scss/_components/common/_header.scss */
+/* line 80, src/scss/_components/common/_header.scss */
 .header__nav-dropdown-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -554,7 +565,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 81, src/scss/_components/common/_header.scss */
+/* line 87, src/scss/_components/common/_header.scss */
 .header__nav-dropdown-menu a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -576,7 +587,7 @@ picture {
   text-align: right;
 }
 
-/* line 95, src/scss/_components/common/_header.scss */
+/* line 101, src/scss/_components/common/_header.scss */
 .header__nav-link {
   position: relative;
   display: -webkit-box;
@@ -589,13 +600,13 @@ picture {
           align-items: center;
 }
 
-/* line 100, src/scss/_components/common/_header.scss */
+/* line 106, src/scss/_components/common/_header.scss */
 .header__nav-link span {
   font-size: 22px;
   color: #444343;
 }
 
-/* line 105, src/scss/_components/common/_header.scss */
+/* line 111, src/scss/_components/common/_header.scss */
 .header__nav-link i {
   position: relative;
   width: 22px;
@@ -603,7 +614,7 @@ picture {
   margin-left: 5px;
 }
 
-/* line 111, src/scss/_components/common/_header.scss */
+/* line 117, src/scss/_components/common/_header.scss */
 .header__nav-link i:after {
   content: '';
   position: absolute;
@@ -626,7 +637,14 @@ picture {
   background-color: #181818;
 }
 
-/* line 9, src/scss/_components/common/_footer.scss */
+/* line 12, src/scss/_components/common/_footer.scss */
+.footer.footer--academic .footer__wrapper-col {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 21, src/scss/_components/common/_footer.scss */
 .footer__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -638,7 +656,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 13, src/scss/_components/common/_footer.scss */
+/* line 25, src/scss/_components/common/_footer.scss */
 .footer__wrapper-col {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -648,7 +666,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 18, src/scss/_components/common/_footer.scss */
+/* line 30, src/scss/_components/common/_footer.scss */
 .footer__wrapper-col-4 {
   position: relative;
   display: -webkit-box;
@@ -661,7 +679,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 23, src/scss/_components/common/_footer.scss */
+/* line 35, src/scss/_components/common/_footer.scss */
 .footer__wrapper-col-4:before {
   content: '';
   position: absolute;
@@ -672,21 +690,21 @@ picture {
   background-color: #5e5e5e;
 }
 
-/* line 36, src/scss/_components/common/_footer.scss */
+/* line 48, src/scss/_components/common/_footer.scss */
 .footer__title {
   padding-bottom: 10px;
   color: #ffffff;
   font-weight: 700;
 }
 
-/* line 42, src/scss/_components/common/_footer.scss */
+/* line 54, src/scss/_components/common/_footer.scss */
 .footer__desc {
   padding-bottom: 22px;
   color: #e5e5e5;
   line-height: 1.45;
 }
 
-/* line 48, src/scss/_components/common/_footer.scss */
+/* line 60, src/scss/_components/common/_footer.scss */
 .footer__direction {
   display: -webkit-box;
   display: -webkit-flex;
@@ -698,25 +716,25 @@ picture {
           align-items: center;
 }
 
-/* line 52, src/scss/_components/common/_footer.scss */
+/* line 64, src/scss/_components/common/_footer.scss */
 .footer__direction .icon-font,
 .footer__direction span {
   text-decoration: none;
   color: #e5e5e5;
 }
 
-/* line 58, src/scss/_components/common/_footer.scss */
+/* line 70, src/scss/_components/common/_footer.scss */
 .footer__direction .icon-font {
   margin-right: 8px;
   font-size: 18px;
 }
 
-/* line 63, src/scss/_components/common/_footer.scss */
+/* line 75, src/scss/_components/common/_footer.scss */
 .footer__direction span {
   text-decoration: underline;
 }
 
-/* line 68, src/scss/_components/common/_footer.scss */
+/* line 80, src/scss/_components/common/_footer.scss */
 .footer__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -728,23 +746,23 @@ picture {
           align-items: center;
 }
 
-/* line 72, src/scss/_components/common/_footer.scss */
+/* line 84, src/scss/_components/common/_footer.scss */
 .footer__link:last-of-type {
   margin-bottom: 20px;
 }
 
-/* line 76, src/scss/_components/common/_footer.scss */
+/* line 88, src/scss/_components/common/_footer.scss */
 .footer__link .icon-font,
 .footer__link span {
   color: #e5e5e5;
 }
 
-/* line 81, src/scss/_components/common/_footer.scss */
+/* line 93, src/scss/_components/common/_footer.scss */
 .footer__link .icon-font {
   margin-right: 17px;
 }
 
-/* line 86, src/scss/_components/common/_footer.scss */
+/* line 98, src/scss/_components/common/_footer.scss */
 .footer__social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -756,7 +774,7 @@ picture {
           align-items: center;
 }
 
-/* line 90, src/scss/_components/common/_footer.scss */
+/* line 102, src/scss/_components/common/_footer.scss */
 .footer__social > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -768,7 +786,7 @@ picture {
           align-items: center;
 }
 
-/* line 95, src/scss/_components/common/_footer.scss */
+/* line 107, src/scss/_components/common/_footer.scss */
 .footer__social-title {
   margin-right: 17px;
   text-transform: uppercase;
@@ -776,7 +794,7 @@ picture {
   color: #e5e5e5;
 }
 
-/* line 102, src/scss/_components/common/_footer.scss */
+/* line 114, src/scss/_components/common/_footer.scss */
 .footer__social-btn {
   position: relative;
   display: -webkit-box;
@@ -799,12 +817,12 @@ picture {
   background-color: transparent;
 }
 
-/* line 113, src/scss/_components/common/_footer.scss */
+/* line 125, src/scss/_components/common/_footer.scss */
 .footer__social-btn:not(:last-of-type) {
   margin-right: 10px;
 }
 
-/* line 117, src/scss/_components/common/_footer.scss */
+/* line 129, src/scss/_components/common/_footer.scss */
 .footer__social-btn .icon-font {
   color: #bcbcbc;
 }
@@ -1000,6 +1018,26 @@ picture {
 }
 
 /* line 6, src/scss/_components/clinical/_subheader.scss */
+.subheader.subheader--academic {
+  background-color: #023b64;
+}
+
+/* line 10, src/scss/_components/clinical/_subheader.scss */
+.subheader.subheader--academic .subheader__ip, .subheader.subheader--academic .subheader__visit {
+  color: #fff;
+}
+
+/* line 16, src/scss/_components/clinical/_subheader.scss */
+.subheader.subheader--academic .subheader__search .icon-font {
+  color: #fff;
+}
+
+/* line 24, src/scss/_components/clinical/_subheader.scss */
+.subheader.subheader--academic ul li u {
+  color: #ffffff;
+}
+
+/* line 31, src/scss/_components/clinical/_subheader.scss */
 .subheader__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1016,7 +1054,15 @@ picture {
   height: 29px;
 }
 
-/* line 12, src/scss/_components/clinical/_subheader.scss */
+/* line 37, src/scss/_components/clinical/_subheader.scss */
+.subheader__wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 41, src/scss/_components/clinical/_subheader.scss */
 .subheader__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1032,7 +1078,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 19, src/scss/_components/clinical/_subheader.scss */
+/* line 48, src/scss/_components/clinical/_subheader.scss */
 .subheader__visit {
   font-size: 12px;
   color: #5b4606;
@@ -1041,7 +1087,7 @@ picture {
   line-height: 1;
 }
 
-/* line 27, src/scss/_components/clinical/_subheader.scss */
+/* line 56, src/scss/_components/clinical/_subheader.scss */
 .subheader__portal, .subheader__ip {
   font-size: 12px;
   color: #5b4606;
@@ -1049,7 +1095,7 @@ picture {
   line-height: 1;
 }
 
-/* line 35, src/scss/_components/clinical/_subheader.scss */
+/* line 64, src/scss/_components/clinical/_subheader.scss */
 .subheader__portal {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1061,14 +1107,14 @@ picture {
           align-items: center;
 }
 
-/* line 39, src/scss/_components/clinical/_subheader.scss */
+/* line 68, src/scss/_components/clinical/_subheader.scss */
 .subheader__portal .icon-font {
   color: #5b4606;
   font-size: 14px;
   margin-right: 15px;
 }
 
-/* line 46, src/scss/_components/clinical/_subheader.scss */
+/* line 75, src/scss/_components/clinical/_subheader.scss */
 .subheader__social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1080,23 +1126,23 @@ picture {
           align-items: center;
 }
 
-/* line 50, src/scss/_components/clinical/_subheader.scss */
+/* line 79, src/scss/_components/clinical/_subheader.scss */
 .subheader__social:not(:last-of-type) {
   margin-right: 10px;
 }
 
-/* line 54, src/scss/_components/clinical/_subheader.scss */
+/* line 83, src/scss/_components/clinical/_subheader.scss */
 .subheader__social .icon-font {
   color: #5b4606;
   font-size: 14px;
 }
 
-/* line 61, src/scss/_components/clinical/_subheader.scss */
+/* line 90, src/scss/_components/clinical/_subheader.scss */
 .subheader__search .icon-font {
   color: #5b4606;
 }
 
-/* line 66, src/scss/_components/clinical/_subheader.scss */
+/* line 95, src/scss/_components/clinical/_subheader.scss */
 .subheader ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1108,7 +1154,7 @@ picture {
           align-items: center;
 }
 
-/* line 70, src/scss/_components/clinical/_subheader.scss */
+/* line 99, src/scss/_components/clinical/_subheader.scss */
 .subheader ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1116,7 +1162,7 @@ picture {
   display: flex;
 }
 
-/* line 73, src/scss/_components/clinical/_subheader.scss */
+/* line 102, src/scss/_components/clinical/_subheader.scss */
 .subheader ul li u {
   margin-left: 15px;
   margin-right: 15px;
@@ -1132,7 +1178,22 @@ picture {
   position: relative;
 }
 
-/* line 6, src/scss/_components/clinical/_main.scss */
+/* line 7, src/scss/_components/clinical/_main.scss */
+.c-main.c-main--academic:before {
+  background-color: white;
+}
+
+/* line 10, src/scss/_components/clinical/_main.scss */
+.c-main.c-main--academic:after {
+  display: none;
+}
+
+/* line 16, src/scss/_components/clinical/_main.scss */
+.c-main.c-main--academic .c-main__slide-title, .c-main.c-main--academic .c-main__slide-desc {
+  color: #2a2a2a;
+}
+
+/* line 24, src/scss/_components/clinical/_main.scss */
 .c-main:before {
   content: '';
   position: absolute;
@@ -1143,7 +1204,7 @@ picture {
   background-color: #025ea0;
 }
 
-/* line 16, src/scss/_components/clinical/_main.scss */
+/* line 34, src/scss/_components/clinical/_main.scss */
 .c-main:after {
   content: '';
   opacity: 0.52;
@@ -1159,12 +1220,12 @@ picture {
           background-size: cover;
 }
 
-/* line 31, src/scss/_components/clinical/_main.scss */
+/* line 49, src/scss/_components/clinical/_main.scss */
 .c-main__slider {
   position: relative;
 }
 
-/* line 34, src/scss/_components/clinical/_main.scss */
+/* line 52, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn {
   position: absolute;
   top: 50%;
@@ -1175,45 +1236,45 @@ picture {
   height: 60px;
 }
 
-/* line 41, src/scss/_components/clinical/_main.scss */
+/* line 59, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn--prev {
   left: 0;
 }
 
-/* line 44, src/scss/_components/clinical/_main.scss */
+/* line 62, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn--prev:after {
   -webkit-transform: rotate(20deg) translateY(1px);
       -ms-transform: rotate(20deg) translateY(1px);
           transform: rotate(20deg) translateY(1px);
 }
 
-/* line 47, src/scss/_components/clinical/_main.scss */
+/* line 65, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn--prev:before {
   -webkit-transform: rotate(-20deg) translateY(-1px);
       -ms-transform: rotate(-20deg) translateY(-1px);
           transform: rotate(-20deg) translateY(-1px);
 }
 
-/* line 51, src/scss/_components/clinical/_main.scss */
+/* line 69, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn--next {
   right: 0;
 }
 
-/* line 54, src/scss/_components/clinical/_main.scss */
+/* line 72, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn--next:after {
   -webkit-transform: rotate(-20deg) translateY(1px);
       -ms-transform: rotate(-20deg) translateY(1px);
           transform: rotate(-20deg) translateY(1px);
 }
 
-/* line 57, src/scss/_components/clinical/_main.scss */
+/* line 75, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn--next:before {
   -webkit-transform: rotate(20deg) translateY(-1px);
       -ms-transform: rotate(20deg) translateY(-1px);
           transform: rotate(20deg) translateY(-1px);
 }
 
-/* line 62, src/scss/_components/clinical/_main.scss */
+/* line 80, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn:after, .c-main__slider-btn:before {
   content: '';
   position: absolute;
@@ -1223,17 +1284,17 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 72, src/scss/_components/clinical/_main.scss */
+/* line 90, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn:after {
   top: 0;
 }
 
-/* line 75, src/scss/_components/clinical/_main.scss */
+/* line 93, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn:before {
   bottom: 0;
 }
 
-/* line 79, src/scss/_components/clinical/_main.scss */
+/* line 97, src/scss/_components/clinical/_main.scss */
 .c-main__slider-btn-wrapper {
   z-index: 10;
   position: absolute;
@@ -1248,22 +1309,26 @@ picture {
   padding-right: 15px;
 }
 
-/* line 95, src/scss/_components/clinical/_main.scss */
+/* line 113, src/scss/_components/clinical/_main.scss */
 .c-main__slide {
   width: 100%;
   max-width: 585px;
   padding-left: 90px;
 }
 
-/* line 100, src/scss/_components/clinical/_main.scss */
+/* line 118, src/scss/_components/clinical/_main.scss */
 .c-main__slide-title {
   padding-bottom: 30px;
   font-size: 34px;
   color: white;
-  font-weight: bold;
 }
 
-/* line 107, src/scss/_components/clinical/_main.scss */
+/* line 123, src/scss/_components/clinical/_main.scss */
+.c-main__slide-title strong {
+  font-weight: 700;
+}
+
+/* line 128, src/scss/_components/clinical/_main.scss */
 .c-main__slide-desc {
   padding-bottom: 40px;
   font-size: 18px;
@@ -1271,7 +1336,7 @@ picture {
   line-height: 1.667;
 }
 
-/* line 120, src/scss/_components/clinical/_main.scss */
+/* line 141, src/scss/_components/clinical/_main.scss */
 .c-main .swiper-slide {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1282,6 +1347,10 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 /* line 3, src/scss/_components/clinical/_schedule.scss */
@@ -1290,7 +1359,12 @@ picture {
   background-color: #efefef;
 }
 
-/* line 8, src/scss/_components/clinical/_schedule.scss */
+/* line 7, src/scss/_components/clinical/_schedule.scss */
+.schedule.schedule--academic {
+  padding-top: 20px;
+}
+
+/* line 12, src/scss/_components/clinical/_schedule.scss */
 .schedule__row-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1308,13 +1382,13 @@ picture {
   background-color: #fbc113;
 }
 
-/* line 16, src/scss/_components/clinical/_schedule.scss */
+/* line 20, src/scss/_components/clinical/_schedule.scss */
 .schedule__row-2 {
   padding-top: 80px;
   padding-bottom: 120px;
 }
 
-/* line 23, src/scss/_components/clinical/_schedule.scss */
+/* line 27, src/scss/_components/clinical/_schedule.scss */
 .schedule__wrapper-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1330,14 +1404,14 @@ picture {
           justify-content: center;
 }
 
-/* line 30, src/scss/_components/clinical/_schedule.scss */
+/* line 34, src/scss/_components/clinical/_schedule.scss */
 .schedule__title {
   padding-right: 50px;
   font-size: 36px;
   color: #5b4606;
 }
 
-/* line 36, src/scss/_components/clinical/_schedule.scss */
+/* line 40, src/scss/_components/clinical/_schedule.scss */
 .schedule__box {
   position: relative;
   display: -webkit-box;
@@ -1355,7 +1429,7 @@ picture {
           box-shadow: 0 2px 0 0 rgba(227, 229, 231, 0.4);
 }
 
-/* line 44, src/scss/_components/clinical/_schedule.scss */
+/* line 48, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1367,20 +1441,20 @@ picture {
           justify-content: space-between;
 }
 
-/* line 48, src/scss/_components/clinical/_schedule.scss */
+/* line 52, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 60px) / 3);
   max-width: calc((100% - 60px) / 3);
 }
 
-/* line 54, src/scss/_components/clinical/_schedule.scss */
+/* line 58, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-head {
   position: relative;
   height: 238px;
 }
 
-/* line 63, src/scss/_components/clinical/_schedule.scss */
+/* line 67, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-body {
   padding: 40px 40px 60px;
   background-color: white;
@@ -1388,7 +1462,7 @@ picture {
           box-shadow: 0 2px 0 0 rgba(227, 229, 231, 0.4);
 }
 
-/* line 69, src/scss/_components/clinical/_schedule.scss */
+/* line 73, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-play {
   position: absolute;
   top: 50%;
@@ -1398,27 +1472,27 @@ picture {
           transform: translate(-50%, -50%);
 }
 
-/* line 75, src/scss/_components/clinical/_schedule.scss */
+/* line 79, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-play .icon-font {
   color: #ffffff;
   font-size: 75px;
 }
 
-/* line 81, src/scss/_components/clinical/_schedule.scss */
+/* line 85, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-title {
   padding-bottom: 10px;
   font-size: 24px;
   color: #2c437b;
 }
 
-/* line 87, src/scss/_components/clinical/_schedule.scss */
+/* line 91, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-desc {
   font-size: 16px;
   color: #5b5959;
   line-height: 1.5;
 }
 
-/* line 93, src/scss/_components/clinical/_schedule.scss */
+/* line 97, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-more {
   z-index: 2;
   position: absolute;
@@ -1446,7 +1520,7 @@ picture {
   background-color: #2775ad;
 }
 
-/* line 109, src/scss/_components/clinical/_schedule.scss */
+/* line 113, src/scss/_components/clinical/_schedule.scss */
 .schedule__box-more i {
   position: relative;
   top: -2px;
