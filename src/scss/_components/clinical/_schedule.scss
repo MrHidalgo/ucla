@@ -15,6 +15,9 @@
 			justify-content: center;
 			height: 165px;
 			background-color: #fbc113;
+			@include adaptive(1439) {
+				height: 135px;
+			}
 		}
 
 		&-2 {
@@ -35,6 +38,15 @@
 		padding-right: 50px;
 		font-size: 36px;
 		color: rgb(91, 70, 6);
+		@include adaptive(1535) {
+			font-size: 33px;
+		}
+		@include adaptive(1439) {
+			font-size: 30px;
+		}
+		@include adaptive(1023) {
+			font-size: 26px;
+		}
 	}
 
 	&__box {
@@ -69,10 +81,20 @@
 		&-wrapper {
 			display: flex;
 			justify-content: space-between;
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc((100% - 60px) / 3);
+				@include adaptive(1023) {
+					max-width: 100%;
+
+					&:not(:last-of-type) {
+						padding-bottom: 50px;
+					}
+				}
 			}
 		}
 
@@ -92,6 +114,9 @@
 			padding: 40px 40px 60px;
 			background-color: rgb(255, 255, 255);
 			box-shadow: 0 2px 0 0 rgba(227, 229, 231, 0.4);
+			@include adaptive(1279) {
+				padding: 30px 30px 50px;
+			}
 		}
 
 		&-play {

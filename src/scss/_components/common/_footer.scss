@@ -11,12 +11,19 @@
 	}
 
 	&.footer--academic {
+		@include adaptive(1023) {
+			padding-bottom: 0;
+		}
+
 		.footer {
 			&__wrapper {
 				&-col {
 					max-width: 260px;
 					margin-left: auto;
 					margin-right: auto;
+					@include adaptive(1023) {
+						max-width: 50%;
+					}
 				}
 			}
 		}

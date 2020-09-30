@@ -150,11 +150,21 @@
 		width: 100%;
 		max-width: 585px;
 		padding-left: 90px;
+		@include adaptive(1023) {
+			max-width: 55%;
+			padding-left: 50px;
+		}
 
 		&-title {
 			padding-bottom: 30px;
 			font-size: 34px;
 			color: rgb(255, 255, 255);
+			@include adaptive(1599) {
+				font-size: 31px;
+			}
+			@include adaptive(1023) {
+				font-size: 26px;
+			}
 
 			strong {
 				font-weight: 700;
@@ -166,16 +176,15 @@
 			font-size: 18px;
 			color: rgb(255, 255, 255);
 			line-height: 1.667;
+			@include adaptive(1023) {
+				font-size: 16px;
+			}
 		}
 
 		&-visual {
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
-
-			svg {
-
-			}
 		}
 	}
 
@@ -187,6 +196,15 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
+			@include adaptive(1599) {
+				min-height: 550px;
+			}
+			@include adaptive(1279) {
+				min-height: 500px;
+			}
+			@include adaptive(1023) {
+				background-position: 30% center;
+			}
 
 			.c-grid {
 				display: flex;

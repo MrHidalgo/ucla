@@ -12,7 +12,7 @@
 				display: flex;
 				align-items: center;
 				width: 120px;
-				@include adaptive(1439) {
+				@include adaptive(1535) {
 					width: 85px;
 				}
 			}
@@ -22,6 +22,9 @@
 				justify-content: center;
 				padding-left: 30px;
 				text-align: center;
+				@include adaptive(1279) {
+					padding-left: 15px;
+				}
 			}
 		}
 	}
@@ -34,7 +37,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		@include transition(max-height);
-		@include adaptive(1439) {
+		@include adaptive(1535) {
 			max-width: 85px;
 			max-height: 104px;
 		}

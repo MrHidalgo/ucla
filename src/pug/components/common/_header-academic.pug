@@ -15,7 +15,9 @@ header#header.header.header--academic.header--fixed
 
 			.header__wrapper-right
 
-				nav.header__nav
+				+hamburger()
+
+				nav.header__nav(mobile-block-js)
 					div
 						.header__nav-dropdown(dropdown-node-js)
 							a.header__nav-link(href="#")
