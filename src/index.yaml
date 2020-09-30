@@ -3,10 +3,10 @@ ProjectTitle: UCLA
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 33
 - file: clinical.html
   titleName: Clinical
-  ready: 1
+  ready: 33
 - file: academic.html
   titleName: Academic
-  ready: 1
+  ready: 33

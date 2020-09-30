@@ -167,10 +167,16 @@
 			color: rgb(255, 255, 255);
 			line-height: 1.667;
 		}
-	}
 
-	.mainSwiper {
+		&-visual {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
 
+			svg {
+
+			}
+		}
 	}
 
 	.swiper {
@@ -181,6 +187,11 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
+
+			.c-grid {
+				display: flex;
+				align-items: center;
+			}
 		}
 	}
 }

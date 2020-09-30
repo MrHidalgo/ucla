@@ -64,6 +64,12 @@
 		justify-content: space-between;
 		height: 198px;
 		@include transition(height);
+		@include adaptive(1535) {
+			height: 178px;
+		}
+		@include adaptive(1599) {
+			height: 128px;
+		}
 
 		&-left {
 			padding-top: 27px;

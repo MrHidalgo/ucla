@@ -12,6 +12,9 @@
 				display: flex;
 				align-items: center;
 				width: 120px;
+				@include adaptive(1439) {
+					width: 85px;
+				}
 			}
 			&:nth-of-type(2) {
 				display: flex;
@@ -31,6 +34,10 @@
 		margin-left: auto;
 		margin-right: auto;
 		@include transition(max-height);
+		@include adaptive(1439) {
+			max-width: 85px;
+			max-height: 104px;
+		}
 	}
 
 	&__title {
@@ -39,12 +46,18 @@
 		font-size: 32px;
 		text-transform: uppercase;
 		font-weight: 700;
+		@include adaptive(1439) {
+			font-size: 28px;
+		}
 	}
 
 	&__subtitle {
 		@extend %fontRaleway;
 		font-size: 20px;
 		color: rgb(129, 139, 163);
+		@include adaptive(1439) {
+			font-size: 18px;
+		}
 
 		&--ttu {
 			text-transform: uppercase;
