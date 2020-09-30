@@ -5,7 +5,7 @@ section#subheader.subheader
 		.subheader__wrapper
 			.subheader__wrapper-left
 
-				a.subheader__visit(href="#") Visit our academic site
+				a.subheader__visit(href="#")!= "<span>Visit our</span> academic site"
 
 			.subheader__wrapper-right
 
@@ -18,7 +18,7 @@ section#subheader.subheader
 						u |
 					li
 						p.subheader__ip 310.825.7471
-					li
+					li.hidden
 						u |
 					li
 						a.subheader__social(href="#")
@@ -28,7 +28,7 @@ section#subheader.subheader
 					li
 						u |
 					li
-						a.subheader__search(href="#")
+						a.subheader__search(href="#searchModal" data-effect='mfp-slide-in' popup-js)
 							i.icon-font.icon-search
 
 // SECTION :: END

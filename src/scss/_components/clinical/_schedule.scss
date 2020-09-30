@@ -18,6 +18,9 @@
 			@include adaptive(1439) {
 				height: 135px;
 			}
+			@include adaptive(767) {
+				height: 100px;
+			}
 		}
 
 		&-2 {
@@ -46,6 +49,12 @@
 		}
 		@include adaptive(1023) {
 			font-size: 26px;
+		}
+		@include adaptive(767) {
+			font-size: 20px;
+		}
+		@include adaptive(374) {
+			font-size: 16px;
 		}
 	}
 
@@ -103,6 +112,9 @@
 			position: relative;
 			height: 238px;
 			backface-visibility: hidden;
+			@include adaptive(767) {
+				height: 200px;
+			}
 
 			img {
 				@extend %imageResCoverAbs;
@@ -135,12 +147,18 @@
 			padding-bottom: 10px;
 			font-size: 24px;
 			color: rgb(44, 67, 123);
+			@include adaptive(767) {
+				font-size: 20px;
+			}
 		}
 
 		&-desc {
 			font-size: 16px;
 			color: rgb(91, 89, 89);
 			line-height: 1.5;
+			@include adaptive(767) {
+				font-size: 14px;
+			}
 		}
 
 		&-more {

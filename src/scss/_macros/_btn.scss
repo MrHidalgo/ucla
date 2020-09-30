@@ -15,6 +15,10 @@ $bth-box-shadow: none;
 	border: none;
   box-shadow: $bth-box-shadow;
   border-radius: $bth-border-radius;
+	@include adaptive(767) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	&:before,
 	&:after {
@@ -54,21 +58,44 @@ $bth-box-shadow: none;
 	}
 
 	.icon-font {
+		@include adaptive(767) {
+			display: none;
+		}
+
 		& + span {
 			padding-left: 16px;
+			@include adaptive(767) {
+				padding-left: 0;
+			}
 		}
 	}
 
 	span {
 		font-size: 14px;
 		letter-spacing: 0.2px;
+		@include adaptive(767) {
+			white-space: nowrap;
+			font-size: 12px;
+		}
 	}
 
 	&--big {
 		height: 54px;
+		@include adaptive(767) {
+			height: 46px;
+		}
+		@include adaptive(374) {
+			height: 40px;
+		}
 	}
 	&--medium {
 		height: 46px;
+		@include adaptive(767) {
+			height: 40px;
+		}
+		@include adaptive(374) {
+			height: 36px;
+		}
 	}
 
 	&--orange {

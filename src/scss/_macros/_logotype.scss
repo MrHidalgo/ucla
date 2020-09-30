@@ -15,6 +15,9 @@
 				@include adaptive(1535) {
 					width: 85px;
 				}
+				@include adaptive(767) {
+					width: 42px;
+				}
 			}
 			&:nth-of-type(2) {
 				display: flex;
@@ -24,6 +27,9 @@
 				text-align: center;
 				@include adaptive(1279) {
 					padding-left: 15px;
+				}
+				@include adaptive(767) {
+					padding-left: 10px;
 				}
 			}
 		}
@@ -41,6 +47,10 @@
 			max-width: 85px;
 			max-height: 104px;
 		}
+		@include adaptive(767) {
+			max-width: 42px;
+			max-height: 50px;
+		}
 	}
 
 	&__title {
@@ -52,6 +62,12 @@
 		@include adaptive(1439) {
 			font-size: 28px;
 		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+		@include adaptive(374) {
+			font-size: 14px;
+		}
 	}
 
 	&__subtitle {
@@ -60,6 +76,12 @@
 		color: rgb(129, 139, 163);
 		@include adaptive(1439) {
 			font-size: 18px;
+		}
+		@include adaptive(767) {
+			font-size: 14px;
+		}
+		@include adaptive(374) {
+			font-size: 12px;
 		}
 
 		&--ttu {

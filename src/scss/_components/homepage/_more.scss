@@ -10,6 +10,9 @@
 	@include adaptive(1439) {
 		height: 126px;
 	}
+	@include adaptive(374) {
+		height: 100px;
+	}
 
 	&__title {
 		padding-bottom: 7px;
@@ -26,6 +29,12 @@
 		}
 		@include adaptive(1023) {
 			font-size: 20px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+		@include adaptive(374) {
+			font-size: 16px;
 		}
 
 		a {

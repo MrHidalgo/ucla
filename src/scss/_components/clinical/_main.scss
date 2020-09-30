@@ -154,6 +154,11 @@
 			max-width: 55%;
 			padding-left: 50px;
 		}
+		@include adaptive(767) {
+			max-width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
 
 		&-title {
 			padding-bottom: 30px;
@@ -164,6 +169,9 @@
 			}
 			@include adaptive(1023) {
 				font-size: 26px;
+			}
+			@include adaptive(767) {
+				font-size: 22px;
 			}
 
 			strong {
@@ -178,6 +186,9 @@
 			line-height: 1.667;
 			@include adaptive(1023) {
 				font-size: 16px;
+			}
+			@include adaptive(767) {
+				font-size: 14px;
 			}
 		}
 

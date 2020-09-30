@@ -21,6 +21,10 @@
 				max-width: 900px;
 				margin-left: auto;
 				margin-right: auto;
+				@include adaptive(767) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
 
 				form {
 					width: 100%;
@@ -45,6 +49,9 @@
 						color: rgb(255, 255, 255);
 						@include inputPlaceholder {
 							color: #ffffff;
+						}
+						@include adaptive(767) {
+							font-size: 30px;
 						}
 					}
 				}
