@@ -19,7 +19,10 @@
 				height: 135px;
 			}
 			@include adaptive(767) {
-				height: 100px;
+				min-height: 100px;
+				height: auto;
+				padding-top: 15px;
+				padding-bottom: 15px;
 			}
 		}
 
@@ -34,6 +37,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@include adaptive(767) {
+				flex-direction: column;
+			}
 		}
 	}
 
@@ -51,7 +57,10 @@
 			font-size: 26px;
 		}
 		@include adaptive(767) {
-			font-size: 20px;
+			padding-right: 0;
+			padding-bottom: 10px;
+			text-align: center;
+			font-size: 18px;
 		}
 		@include adaptive(374) {
 			font-size: 16px;
