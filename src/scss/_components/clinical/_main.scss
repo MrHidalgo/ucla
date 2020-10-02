@@ -3,6 +3,128 @@
 .c-main {
 	position: relative;
 
+	&.c-main--clinical {
+		.swiper {
+			&-slide {
+				position: relative;
+				background-position: right center;
+				@include adaptive(1439) {
+					background-position-x: calc(100% + 175px);
+				}
+				@include adaptive(1279) {
+					background-position-x: 35%;
+				}
+
+				&-bg {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					@include adaptive(1279) {
+						display: none;
+					}
+
+					span {
+						z-index: 2;
+						position: absolute;
+						width: 23px;
+						height: 23px;
+						border-radius: 50%;
+						background: #FF5252;
+						box-shadow: 0 0 0 0 #FF5252;
+						animation: pulse-red 2s infinite;
+
+						&:nth-of-type(1) {
+							top: 31px;
+							right: 566px;
+							@include adaptive(1599) {
+								top: 28px;
+								right: 516px;
+							}
+							@include adaptive(1439) {
+								top: 28px;
+								right: 341px;
+							}
+						}
+						&:nth-of-type(2) {
+							top: 145px;
+							right: 654px;
+							@include adaptive(1599) {
+								top: 133px;
+								right: 597px;
+							}
+							@include adaptive(1439) {
+								top: 133px;
+								right: 422px;
+							}
+						}
+						&:nth-of-type(3) {
+							top: 261px;
+							right: 760px;
+							@include adaptive(1599) {
+								top: 238px;
+								right: 694px;
+							}
+							@include adaptive(1439) {
+								top: 238px;
+								right: 519px;
+							}
+						}
+						&:nth-of-type(4) {
+							top: 301px;
+							right: 572px;
+							@include adaptive(1599) {
+								top: 275px;
+								right: 522px;
+							}
+							@include adaptive(1439) {
+								top: 275px;
+								right: 347px;
+							}
+						}
+						&:nth-of-type(5) {
+							top: 238px;
+							right: 427px;
+							@include adaptive(1599) {
+								top: 209px;
+								right: 419px;
+							}
+							@include adaptive(1439) {
+								top: 209px;
+								right: 244px;
+							}
+						}
+						&:nth-of-type(6) {
+							top: 450px;
+							right: 501px;
+							@include adaptive(1599) {
+								top: 411px;
+								right: 456px;
+							}
+							@include adaptive(1439) {
+								top: 411px;
+								right: 281px;
+							}
+						}
+						&:nth-of-type(7) {
+							top: 362px;
+							right: 874px;
+							@include adaptive(1599) {
+								top: 332px;
+								right: 585px;
+							}
+							@include adaptive(1439) {
+								top: 332px;
+								right: 622px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	&.c-main--academic {
 		&:before {
 			background-color: rgba(#fff, 1);
@@ -39,7 +161,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		//background: linear-gradient(to bottom, rgba(0,3,10,1) 0%,rgba(5,22,54,1) 50%,rgba(0,3,10,1) 100%);
 		background-image: url('../img/img-c-main-bg-curve@2x.png');
 		background-repeat: no-repeat;
 		background-position: center;
@@ -221,6 +342,23 @@
 				display: flex;
 				align-items: center;
 			}
+		}
+	}
+
+	@keyframes pulse-red {
+		0% {
+			transform: scale(0.9);
+			box-shadow: 0 0 0 0 rgba(#FF5252, 0.7);
+		}
+
+		70% {
+			transform: scale(1);
+			box-shadow: 0 0 0 15px rgba(#fff, 0);
+		}
+
+		100% {
+			transform: scale(0.95);
+			box-shadow: 0 0 0 0 rgba(#fff, 0);
 		}
 	}
 }
