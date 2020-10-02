@@ -2,7 +2,7 @@
 
 .subheader {
 	z-index: 998;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -56,8 +56,8 @@
 		font-style: italic;
 		text-transform: uppercase;
 		line-height: 1;
-		@include adaptive(374) {
-			font-size: 10px;
+		@include adaptive(767) {
+			font-size: 13px;
 		}
 
 		&:hover {
@@ -77,8 +77,28 @@
 		color: #5b4606;
 		text-transform: uppercase;
 		line-height: 1;
-		@include adaptive(374) {
-			font-size: 10px;
+		@include adaptive(767) {
+			font-size: 13px;
+		}
+	}
+
+	&__ip {
+		&:hover {
+			color: #5b4606;
+		}
+
+		.icon-font {
+			display: none;
+			font-size: 14px;
+			@include adaptive(767) {
+				display: flex;
+			}
+		}
+
+		span {
+			@include adaptive(767) {
+				display: none;
+			}
 		}
 	}
 
@@ -148,8 +168,8 @@
 				color: #5b4606;
 				text-transform: uppercase;
 				@include adaptive(767) {
-					margin-left: 5px;
-					margin-right: 5px;
+					margin-left: 7px;
+					margin-right: 7px;
 				}
 			}
 		}
