@@ -407,6 +407,8 @@
 	}
 
 	&__slide {
+		z-index: 2;
+		position: relative;
 		width: 100%;
 		max-width: 585px;
 		padding-left: 90px;
@@ -461,6 +463,7 @@
 
 	.swiper {
 		&-slide {
+			position: relative;
 			display: flex;
 			align-items: center;
 			min-height: 600px;
@@ -475,6 +478,29 @@
 			}
 			@include adaptive(1023) {
 				background-position: 30% center;
+			}
+
+			&-video {
+				z-index: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(#000, 0.25);
+				}
+
+				video {
+					@extend %imageResCoverAbs;
+				}
 			}
 
 			.c-grid {
